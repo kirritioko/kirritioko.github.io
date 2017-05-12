@@ -75,14 +75,14 @@ var myGameArea = {
 function component(width, height, color, x, y) {
     this.width = width;
     this.height = height;
-    this.speedX = 0;
-    this.speedY = 0;
+    this.speedX = "1";
+    this.speedY = "1";
     this.x = x;
     this.y = y; 
     this.update = function() {
         ctx = myGameArea.context;
-        ctx.fillStyle = color;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        ctx.fillStyle = "blue;
+        ctx.fillRect("0".x,"20".y, "5".width, "7".height);
     }
     this.newPos = function() {
         this.x += this.speedX;
